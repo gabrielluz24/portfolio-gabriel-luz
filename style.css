@@ -84,7 +84,7 @@ header nav ul li{
 
 /* ESTILO TOPO SITE */
 section.topo-do-site{
-    padding: 20px 4%;
+    padding: 6% 4%;
 
 }
 
@@ -126,8 +126,8 @@ section.topo-do-site .flex{
 /* ESTILO DO SOBRE */
 section.sobre{
     padding: 150px 4%;
-    
 }
+
 section.sobre .flex{
     align-items: center;
     gap: 60px;
@@ -174,7 +174,7 @@ section.portfolio{
 }
 
 section.portfolio .flex{
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-top: 60px;
 }
 
@@ -284,4 +284,80 @@ footer .line-footer p i{
 
 footer .line-footer p a{
     color: #fff;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1020px){
+
+    
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    } 
+
+    /* CABEÇALHO */
+
+    .menu-desktop, .btn-contato{
+        display: none; 
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /* SOBRE */
+
+    section.sobre{
+        padding: 150px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* PORTIFOLIO */
+
+    section.portfolio{
+        padding: 80px 8%;   
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+       gap: 60px;
+    }
 }
